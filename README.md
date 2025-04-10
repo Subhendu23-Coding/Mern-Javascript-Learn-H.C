@@ -29,6 +29,7 @@ beginner basic new coding skill learning javascript
 	// "remoteUser": "root"
 }
 
+
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
