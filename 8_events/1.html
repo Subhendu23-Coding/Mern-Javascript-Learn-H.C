@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events_Html</title>
+</head>
+<body>
+    <h1>Amazing Images</h1>
+    <div>
+        <ul id="Images">
+            <li>
+                <img width="50%" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop">
+            </li>
+            <li>
+                <img width="50%" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="">
+            </li>
+            <li>
+                <img width="50%" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="">
+            </li>
+            <li>
+                <img width="50%" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" >
+            </li>
+            <li>
+                <img width="50%" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" onclick="alert('prayer')">
+
+            </li>
+            <li>
+                <a style="color: rgb(219, 112, 196);" target="_blank" href="https://google.com" id="google">Google</a>
+            </li>
+        </ul>
+    </div>
+  <script>
+       document.getElementById('owl').onclick = function(){
+        alert("owl clicked")
+       }
+
+       document.getElementById('river').addEventListener('click', function(){
+        alert("click river again")
+       })
+
+       document.getElementById('japan').addEventListener('click', function(e){
+        console.log(e)
+       }, false);
+
+        // type, timestamp, defaultPrevented
+        // target, toElement, srcElement, currentTarget,
+        // clientX, clientY, offSet, screenX, screenY
+        // altKey, ctrlKey, shiftKey, keyCode
+
+    // attachEvent()
+    // jQuery-on onEventListener()
+
+    document.getElementById('photoshop').addEventListener('click', function(e){
+        console.log("click inside the url");
+    }),false;
+
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log("owl click");
+        e.stopPropagation()
+    }),false;
+
+    // document.getElementById('google').addEventListener
+    // ('click', function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("google click");
+    // });
+
+    document.querySelector('#images').addEventListener
+    ('click', function(e){
+        // console.log(e.target .parentNode);
+        console.log(e.target .tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id)
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+        let removeIt = e.target.parentNode
+        // removeIt.remove();
+        removeIt.parentNode.removChild(removeIt)
+        
+    })
+  </script>
+</body>
+</html>
