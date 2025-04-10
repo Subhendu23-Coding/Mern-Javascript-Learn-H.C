@@ -1,0 +1,40 @@
+html {
+    margin: 0;
+    }
+    
+    span{
+        display: block;
+    }
+    .canvas{
+        margin: 100px auto 100px;
+        width: 500px;
+        text-align: center;
+    }
+    
+    .button{
+        width: 50px;
+        height: 100px;
+        border: solid;
+        display: inline-block;
+        border-radius: 9%;
+        border-color:black;
+        margin: 5px;
+    }
+    #magenta{
+        background-color: magenta;
+    }
+    #yellow{
+        background-color: yellow;
+    }
+    #green{
+        background-color: green;
+    }
+    #red{
+        background-color: red;
+    }
+    #skyblue{
+        background-color: skyblue;
+    }
+    #black{
+        background-color: black;
+    }
