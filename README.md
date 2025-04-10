@@ -30,6 +30,7 @@ beginner basic new coding skill learning javascript
 }
 
 
+
 version: 2
 updates:
  - package-ecosystem: "devcontainers"
