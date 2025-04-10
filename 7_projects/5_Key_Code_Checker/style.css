@@ -1,0 +1,52 @@
+/* Table Styles */
+table, th, td {
+    border: 3px solid #e7e7e7;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Project Container Styles */
+.project {
+    background-color: #1c1c1c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Color Styling for Text */
+.color {
+    font-size: 40px;
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.color table {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #333;
+}
+
+th {
+    background-color: #444;
+    color: #fff;
+}
+
+td {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Make sure the body has some padding around */
+body {
+    margin: 0;
+    padding: 0;
+}
