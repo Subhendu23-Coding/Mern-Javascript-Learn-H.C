@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html_CSS_Js_Code</title>
+</head>
+<body style="background-color: rgb(76, 136, 214);">
+
+    <ul class="Language">
+        <li>Javascript</li>
+    </ul>
+    
+    <script>
+        function addLanguage(Language) {
+            const li = document.createElement('li');
+            li.innerHTML = Language; 
+            document.querySelector('.Language').
+            appendChild(li);  
+        }
+    
+        addLanguage("Python");
+        addLanguage("Java");
+        addLanguage("PHP")
+
+
+        function addOptiLanguage(Language) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(Language));  
+        document.querySelector('.Language').
+        appendChild(li);  
+    }
+       addOptiLanguage('CSS'); 
+
+    //    <--edit language-->
+
+        const secondLang = document.querySelector("li:nth-child(2)")
+        // secondLang.innerHTML = "Mojo"; // at sob somoi used kora jab na
+        const newli = document.createElement('li')
+        newli.textContent = "Boostaerp";
+        secondLang.replaceWith(newli);
+
+
+         //    <--edit lan- chang->
+            const firstLang = document.querySelector("li:first-child")
+            firstLang.outerHTML = '<li>Javascript 2</li>'
+
+            //remove lang
+            const lastLang = document.querySelector("li:last-child");
+            lastLang.remove()
+
+
+
+    </script>
+</body>
+</html>
